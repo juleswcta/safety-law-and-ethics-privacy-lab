@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f5f3">
+    <meta name="description" content="a tiny interactive case about GPS, privacy, and safer app choices.">
+    <title>little privacy lab — your location has a story</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="privacy lab">
+          <span class="brand-mark" aria-hidden="true">:3</span>
+          <span>privacy lab</span>
+        </a>
+        <a class="top-link" href="#sources">field notes <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <div class="intro-copy">
+            <p class="eyebrow"><span class="status-dot"></span> a tiny case study · 3 decisions <span class="sparkle" aria-hidden="true">✿</span></p>
+            <h1 id="page-title">your location<br>has a <em>story.</em></h1>
+            <p class="intro-text">a navigation app can do more than get you from a to b. can you spot what your location might reveal—and choose what to share?</p>
+            <a class="start-button" href="#case">open the case <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <aside class="profile-window" aria-label="Case file preview">
+            <span class="sticker sticker-star" aria-hidden="true">✦</span>
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>case-file / 03</span>
+              <span class="window-close" aria-hidden="true">×</span>
+            </div>
+            <div class="profile-card">
+              <div class="map-art" aria-hidden="true">
+                <span class="map-street street-one"></span>
+                <span class="map-street street-two"></span>
+                <span class="map-street street-three"></span>
+                <span class="map-pin">♡</span>
+                <span class="map-label label-home">home</span>
+                <span class="map-label label-stop">?</span>
+                <span class="map-label label-school">school</span>
+              </div>
+              <div class="case-caption">
+                <div>
+                  <span class="mini-label">today's question</span>
+                  <strong>who can follow this route?</strong>
+                </div>
+                <span class="caption-icon" aria-hidden="true">⌖</span>
+              </div>
+              <div class="route-log">
+                <span class="route-line" aria-hidden="true"></span>
+                <span>8:10 AM <b>home</b></span>
+                <span>8:42 AM <b>school</b></span>
+                <span class="route-end">and the places in between…</span>
+              </div>
+            </div>
+            <p class="window-note">no real location is collected here <span aria-hidden="true">✿ ♡ ✿</span></p>
+          </aside>
+        </section>
+
+        <section class="case-section" id="case" aria-labelledby="case-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / the case</p>
+              <h2 id="case-title">mallow maps wants access.</h2>
+            </div>
+            <p class="section-note">pick the answer you think protects the person best. there’s a clue in every choice.</p>
+          </div>
+
+          <div class="quiz-window">
+            <div class="quiz-topline">
+              <span><span class="live-dot"></span> privacy check-in</span>
+              <span id="progress-label">decision 1 of 3</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Case progress" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0">
+              <span class="progress-fill"></span>
+            </div>
+
+            <div class="question-area" aria-live="polite">
+              <p class="question-kicker" id="question-kicker">permission prompt</p>
+              <h3 id="question" tabindex="-1">mallow maps asks to use your location. which setting is the safer place to start?</h3>
+              <div class="answer-list" id="answer-list"></div>
+              <div class="feedback" id="feedback" hidden>
+                <span class="feedback-icon" aria-hidden="true">✿</span>
+                <div>
+                  <strong id="feedback-title"></strong>
+                  <p id="feedback-copy"></p>
+                  <button class="next-button" id="next-button" type="button">next decision <span aria-hidden="true">→</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="quiz-footer">
+              <span><span aria-hidden="true">♡</span> think it through; there’s no trick</span>
+              <button class="reset-button" id="reset-button" type="button" hidden>Try again</button>
+            </div>
+          </div>
+          <p class="privacy-promise"><span aria-hidden="true">✧</span> this activity is a simulation. it never asks for or records your location.</p>
+        </section>
+
+        <section class="takeaway-grid" aria-label="What to remember">
+          <article class="takeaway-card">
+            <span class="card-index">A / data clue</span>
+            <span class="card-sparkle" aria-hidden="true">♡ ✧</span>
+            <h3>a dot can become a pattern.</h3>
+            <p>repeated location points may reveal routines—like where someone sleeps, studies, works, or visits. a route history can say more than one pin.</p>
+          </article>
+          <article class="takeaway-card law-card">
+            <span class="card-index">B / law note · united States</span>
+            <span class="law-icon" aria-hidden="true">⚖︎</span>
+            <h3>privacy laws have a scope.</h3>
+            <p>U.S. COPPA is a children’s online privacy law: it applies to certain services directed to children under 13, and some services that know they collect personal information from under-13s. it is not a general privacy shield for every app or every teen.</p>
+            <a href="https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions" target="_blank" rel="noreferrer">read the FTC’s COPPA guidance <span aria-hidden="true">↗</span></a>
+          </article>
+        </section>
+
+        <section class="sources" id="sources" aria-labelledby="sources-title">
+          <div class="sources-heading">
+            <p class="eyebrow">keep exploring</p>
+            <h2 id="sources-title">field notes &amp; sources</h2>
+            <p>credible reads behind this mini-lesson. law and enforcement examples below are specific to the united states.</p>
+          </div>
+          <ol class="source-list">
+            <li>
+              <span class="source-number">01</span>
+              <div>
+                <a href="https://www.ftc.gov/news-events/news/press-releases/2024/01/ftc-bans-data-broker-x-mode-social-outlogic-selling-sensitive-location-data" target="_blank" rel="noreferrer">FTC: Data broker settlement involving sensitive location data <span aria-hidden="true">↗</span></a>
+                <p>U.S. federal trade commission · explains why location data can be sensitive and describes a U.S. enforcement action.</p>
+              </div>
+            </li>
+            <li>
+              <span class="source-number">02</span>
+              <div>
+                <a href="https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions" target="_blank" rel="noreferrer">FTC: Complying with COPPA — frequently asked questions <span aria-hidden="true">↗</span></a>
+                <p>U.S. federal trade commission · official guidance on the scope of the Children’s Online Privacy Protection Rule.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span><span aria-hidden="true">♡</span></span>
+        <span>performance standard 5.3 · safety, law &amp; ethics in computing</span>
+      </footer>
+    </div>
+  </body>
+</html>
